@@ -146,31 +146,39 @@ select {
   cursor: pointer;
 }
 
-.tomato-img {
-  background-image: url("./images/desktop/image-graphic-design.jpg");
+.cherry-img {
+  /* background-image: url("./images/desktop/image-graphic-design.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 32em;
+  background-size: cover; */
+  /* height: 32em; */
   color: hsl(167, 40%, 24%);
+  position: absolute;
+  padding: 12em 5em 0;
 }
 
 .peach-img {
-  background-image: url("./images/desktop/image-photography.jpg");
+  /* background-image: url("./images/desktop/image-photography.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   color: hsl(198, 62%, 26%);
+  position: absolute;
+  padding: 12em 5em 0;
 }
 
 .articles-bottom {
   font-size: 18px;
   font-family: "Fraunces", serif;
-  padding: 18rem 5.9rem 0;
+  /* padding: 18rem 5.9rem 0; */
   text-align: center;
+  position: relative;
 }
 
+/* Start of the Testimonials Section ----------------------*/
+
 .testimonial-container {
-  width: 70%;
   margin: auto;
+  font-family: "Barlow", sans-serif;
+  width: 80vw;
 }
 
 .testimonial {
@@ -178,10 +186,83 @@ select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 30%;
-  padding: 5rem 2rem 0;
+  padding: 6rem 1.5rem 0;
+  gap: 4em;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .testimonial-container img {
   border-radius: 75px;
 }
+
+.testimonial-header {
+  color: hsl(210, 4%, 67%);
+  padding-top: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.signature {
+  color: hsl(210, 4%, 67%);
+}
+
+.signature p:first-child {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.3rem;
+  color: hsl(198, 62%, 26%);
+  font-weight: 900;
+}
+
+/* Gallery section with 4 photos ---------------------*/
+.gallery-section {
+  padding-top: 11rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Footer Section ------------------------------------*/
+
+footer {
+  background: hsla(168, 34%, 41%, 0.749);
+  color: hsl(167, 40%, 24%);
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+}
+
+.links {
+  display: flex;
+  text-decoration: none;
+  gap: 4rem;
+  list-style-type: none;
+  padding-top: 2rem;
+}
+
+.links a {
+  color: hsl(167, 40%, 24%);
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  gap: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+/* @media (max-width: 400px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+} */
